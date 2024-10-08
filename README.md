@@ -3,7 +3,11 @@
 
 Each anonymous network can be attributed to a specific problem (or to a hybrid of certain problems). Currently, there are five anonymization problems: Onion, Proxy, DC, QB, EI. If the network does not belong to one of these problems, it means that either the network is not anonymous, or a new anonymization problem has been opened. In the latter case, it is necessary to prove that the new anonymization problem actually implements an algorithm for obfuscating/hiding routing.
 
-## Examples of non-anonymous networks
+## What is anonymity?
+
+Anonymity is the concealment of the true connections between multiple senders and recipients from multiple observers. At the same time, many observers can be located in both a set of senders and a set of recipients, which makes the task of anonymization more time-consuming and selective.
+
+### Examples of non-anonymous networks
 
 * All centralized services: Telegram, Facebook, Github, ...
 * Client-secure only applications: Bitmessage, RetroShare, Freenet ...
