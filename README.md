@@ -56,9 +56,9 @@ Anonymity is the concealment of the true connections between multiple senders an
 ```
 E(K3, E(K2, E(K1, M))) -> E(K2, E(K1, M)) -> E(K1, M) -> M
 where
-	E - encryption
-	K - key
-	M - message
+	E          - encryption
+	M          - message
+	K1, K2, K3 - keys
 ```
 
 #### Research papers
@@ -84,9 +84,9 @@ where
 ```
 E(K3, M) -> E(K2, M) -> E(K1, M) -> M
 where
-	E - encryption
-	K - key
-	M - message
+	E          - encryption
+	M          - message
+	K1, K2, K3 - keys
 ```
 
 #### Research papers
@@ -158,9 +158,9 @@ where
 ```
 E(K1, M) OR E(K2, E(K1, M))
 where
-	E - encryption
-	K - key
-	M - message
+	E      - encryption
+	M      - message
+	K1, K2 - keys
 ```
 
 #### Research papers
