@@ -83,6 +83,7 @@ Anonymity is the concealment of the true connections between multiple senders an
 
 #### Networks
 * [Hidden Lake](https://github.com/number571/go-peer/tree/master/cmd/hidden_lake): network_arch=p2p, network_model=decentralized, network_type=closed, source_code=open, subtype_problem=f2f
+* [M-A](https://github.com/number571/go-peer/tree/master/cmd/micro_anon): network_arch=p2p, network_model=decentralized, network_type=closed, source_code=open, subtype_problem=f2f
 
 ### 5. EI (entropy increase problem)
 
