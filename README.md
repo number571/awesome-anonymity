@@ -20,7 +20,7 @@ Anonymity is the concealment of the true connections between multiple senders an
 2. network_model = [centralized, decentralized]
 3. network_type = [open, closed]
 4. source_code = [open, closed, missing]
-5. subtype_problem = [mixnet, f2f]
+5. subtype_problem = [mixnet, garlic, f2f]
 6. todo (need add tags)
 
 ## Problems
@@ -33,10 +33,13 @@ Anonymity is the concealment of the true connections between multiple senders an
 
 #### Research papers
 * [Untraceable Electronic Mail, Return Addresses, and Digital Pseudonyms](https://dl.acm.org/doi/10.1145/358549.358563)
+* [Securing the Tor Network](https://www.blackhat.com/presentations/bh-usa-07/Perry/Whitepaper/bh-usa-07-perry-WP.pdf)
+* [I2P - Invisible Internet Project](https://staas.home.xs4all.nl/t/swtr/documents/wt2015_i2p.pdf)
+* [Mixminion: Design of a Type III Anonymous Remailer Protocol](https://www.mixminion.net/minion-design.pdf)
 
 #### Networks
 * [Tor](https://www.torproject.org/ru/): network_arch=hybrid, network_model=centralized, network_type=open|closed, source_code=open
-* [I2P](https://geti2p.com/): network_type=p2p, network_model=decentralized, network_type=closed, source_code=open
+* [I2P](https://geti2p.com/): network_type=p2p, network_model=decentralized, network_type=closed, source_code=open, subtype_problem=garlic
 * [Mixminion](https://www.mixminion.net/): network_arch=hybrid, network_model=centralized, network_type=open, source_code=open, subtype_problem=mixnet
 * [Perfect Dark](http://www21.atwiki.jp/botubotubotubotu/): network_type=hybrid, network_model=decentralized, network_type=closed, source_code=closed, subtype_problem=mixnet
 
