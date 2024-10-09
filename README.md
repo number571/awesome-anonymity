@@ -5,7 +5,7 @@
 <h2>
 	<p align="center">
     	<strong>
-        	Awesome-Anonymity
+        	Awesome Anonymity
    		</strong>
 	</p>
 	<p align="center">
