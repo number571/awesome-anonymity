@@ -38,11 +38,10 @@ Anonymity is the concealment of the true connections between multiple senders an
 ## Tags
 
 1. network_arch = [p2p, hybrid]
-2. network_model = [centralized, decentralized]
-3. network_type = [open, closed]
-4. source_code = [open, closed, missing]
-5. subtype_problem = [mixnet, garlic, f2f]
-6. todo_tag (need add/set tags)
+2. network_type = [open, closed]
+3. source_code = [open, closed, missing]
+4. subtype_problem = [mixnet, garlic, f2f]
+5. todo_tag (need add/set tags)
 
 ## Problems
 
@@ -59,10 +58,10 @@ Anonymity is the concealment of the true connections between multiple senders an
 * [Mixminion: Design of a Type III Anonymous Remailer Protocol](https://www.mixminion.net/minion-design.pdf)
 
 #### Networks
-* [Tor](https://www.torproject.org/ru/): network_arch=hybrid, network_model=centralized, network_type=open|closed, source_code=open
-* [I2P](https://geti2p.com/): network_type=p2p, network_model=decentralized, network_type=closed, source_code=open, subtype_problem=garlic
-* [Mixminion](https://www.mixminion.net/): network_arch=hybrid, network_model=centralized, network_type=open, source_code=open, subtype_problem=mixnet
-* [Perfect Dark](http://www21.atwiki.jp/botubotubotubotu/): network_type=hybrid, network_model=decentralized, network_type=closed, source_code=closed, subtype_problem=mixnet
+* [Tor](https://www.torproject.org/ru/): network_arch=hybrid, network_type=open|closed, source_code=open
+* [I2P](https://geti2p.com/): network_type=p2p, network_type=closed, source_code=open, subtype_problem=garlic
+* [Mixminion](https://www.mixminion.net/): network_arch=hybrid, network_type=open, source_code=open, subtype_problem=mixnet
+* [Perfect Dark](http://www21.atwiki.jp/botubotubotubotu/): network_type=hybrid, network_type=closed, source_code=closed, subtype_problem=mixnet
 
 ### 2. Proxy
 
@@ -74,7 +73,7 @@ Anonymity is the concealment of the true connections between multiple senders an
 * [Crowds: Anonymity for Web Transactions](https://web.archive.org/web/20051212103028/http://avirubin.com/crowds.pdf)
 
 #### Networks
-* [Crowds](https://en.wikipedia.org/wiki/Crowds_(anonymity_network)): network_arch=hybrid, network_model=centralized, network_type=open, source_code=missing
+* [Crowds](https://en.wikipedia.org/wiki/Crowds_(anonymity_network)): network_arch=hybrid, network_type=open, source_code=missing
 
 ### 3. DC (dining cryptographers problem)
 
@@ -89,9 +88,9 @@ Anonymity is the concealment of the true connections between multiple senders an
 * [PriFi: Low-Latency Anonymity for Organizational Networks](https://petsymposium.org/2020/files/papers/issue4/popets-2020-0059.pdf)
 
 #### Networks
-* [Herbivore](https://www.cs.cornell.edu/people/egs/herbivore/faq.html): network_arch=p2p, network_model=decentralized, network_type=open, source_code=missing
-* [Dissent](https://github.com/dedis/Dissent): network_arch=hybrid, network_model=centralized, network_type=open, source_code=open
-* [PriFi](https://github.com/dedis/prifi): network_arch=hybrid, network_model=centralized, network_type=open, source_code=open
+* [Herbivore](https://www.cs.cornell.edu/people/egs/herbivore/faq.html): network_arch=p2p, network_type=open, source_code=missing
+* [Dissent](https://github.com/dedis/Dissent): network_arch=hybrid, network_type=open, source_code=open
+* [PriFi](https://github.com/dedis/prifi): network_arch=hybrid, network_type=open, source_code=open
 
 ### 4. QB (queue based problem)
 
@@ -103,8 +102,8 @@ Anonymity is the concealment of the true connections between multiple senders an
 * [Анонимная сеть «Hidden Lake»](https://github.com/number571/go-peer/blob/master/docs/hidden_lake_anonymous_network.pdf)
 
 #### Networks
-* [Hidden Lake](https://github.com/number571/go-peer/tree/master/cmd/hidden_lake): network_arch=p2p, network_model=decentralized, network_type=closed, source_code=open, subtype_problem=f2f
-* [M-A](https://github.com/number571/go-peer/tree/master/cmd/micro_anon): network_arch=p2p, network_model=decentralized, network_type=closed, source_code=open, subtype_problem=f2f
+* [Hidden Lake](https://github.com/number571/go-peer/tree/master/cmd/hidden_lake): network_arch=p2p, network_type=closed, source_code=open, subtype_problem=f2f
+* [M-A](https://github.com/number571/go-peer/tree/master/cmd/micro_anon): network_arch=p2p, network_type=closed, source_code=open, subtype_problem=f2f
 
 ### 5. EI (entropy increase problem)
 
