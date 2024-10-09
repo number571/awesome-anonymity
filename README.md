@@ -52,8 +52,7 @@ Anonymity is the concealment of the true connections between multiple senders an
 #### Networks
 * [Crowds](https://en.wikipedia.org/wiki/Crowds_(anonymity_network)): network_arch=p2p, network_model=decentralized, network_type=open, source_code=missing
 
-### 3. DC
-> dining cryptographers problem
+### 3. DC (dining cryptographers problem)
 
 <p align="center">
     <img src="images/dc.png" alt="dc.png"/>
@@ -70,8 +69,7 @@ Anonymity is the concealment of the true connections between multiple senders an
 * [Dissent](https://github.com/dedis/Dissent): network_arch=hybrid, network_model=centralized, network_type=open, source_code=open
 * [PriFi](https://github.com/dedis/prifi): network_arch=hybrid, network_model=centralized, network_type=open, source_code=open
 
-### 4. QB
-> queue based problem
+### 4. QB (queue based problem)
 
 <p align="center">
     <img src="images/qb.png" alt="qb.png"/>
@@ -83,8 +81,7 @@ Anonymity is the concealment of the true connections between multiple senders an
 #### Networks
 * [Hidden Lake](https://github.com/number571/go-peer/tree/master/cmd/hidden_lake): network_arch=p2p, network_model=decentralized, network_type=closed, source_code=open, subtype_problem=f2f
 
-### 5. EI
-> entropy increase problem
+### 5. EI (entropy increase problem)
 
 <p align="center">
     <img src="images/ei.png" alt="ei.png"/>
