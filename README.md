@@ -178,3 +178,7 @@ where
 
 #### Networks
 * _
+
+## License
+
+Licensed under the MIT License. See [LICENSE](LICENSE) for the full license text.
