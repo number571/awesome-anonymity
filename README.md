@@ -51,7 +51,7 @@ Anonymity is the concealment of the true connections between multiple senders an
     <img src="images/onion.png" alt="onion.png"/>
 </p>
 
-### Pattern
+#### Pattern
 
 ```
 E(K3, E(K2, E(K1, M))) -> E(K2, E(K1, M)) -> E(K1, M) -> M
@@ -79,7 +79,7 @@ where
     <img src="images/proxy.png" alt="proxy.png"/>
 </p>
 
-### Pattern
+#### Pattern
 
 ```
 E(K3, M) -> E(K2, M) -> E(K1, M) -> M
@@ -101,7 +101,7 @@ where
     <img src="images/dc.png" alt="dc.png"/>
 </p>
 
-### Pattern
+#### Pattern
 
 ```
 (A(B) xor A(C)) xor (B(A) xor B(C)) xor (C(A) xor C(B))    -> M = 0b
@@ -129,7 +129,7 @@ where
     <img src="images/qb.png" alt="qb.png"/>
 </p>
 
-### Pattern
+#### Pattern
 
 ```
 (E(K, M) OR E(R, V)) <- A(x)
@@ -156,7 +156,7 @@ where
     <img src="images/ei.png" alt="ei.png"/>
 </p>
 
-### Pattern
+#### Pattern
 
 ```
 E(K1, M) OR E(K2, E(K1, M))
