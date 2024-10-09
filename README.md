@@ -104,8 +104,8 @@ where
 #### Pattern
 
 ```
-(A(B) xor A(C)) xor (B(A) xor B(C)) xor (C(A) xor C(B))    -> M = 0b
-(A(B) xor A(C)) xor (B(A) xor B(C)) xor not(C(A) xor C(B)) -> M = 1b
+(A(B) xor A(C)) xor (B(A) xor B(C)) xor (C(A) xor C(B))    -> M = 0
+(A(B) xor A(C)) xor (B(A) xor B(C)) xor not(C(A) xor C(B)) -> M = 1
 where
 	A(B) = B(A) - total generated bit between A and B
 	B(C) = C(B) - total generated bit between B and C
