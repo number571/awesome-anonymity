@@ -21,7 +21,7 @@ Anonymity is the concealment of the true connections between multiple senders an
 3. network_type = [open, closed]
 4. source_code = [open, closed, missing]
 5. subtype_problem = [mixnet, garlic, f2f]
-6. todo (need add tags)
+6. todo_tag (need add/set tags)
 
 ## Problems
 
