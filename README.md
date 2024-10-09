@@ -1,5 +1,26 @@
-# Awesome-Anonymity
-> A curated list of anonymity networks & research papers
+<p align="center">
+    <img src="images/title.jpg" alt="title.jpg"/>
+</p>
+
+<h2>
+	<p align="center">
+    	<strong>
+        	Awesome-Anonymity
+   		</strong>
+	</p>
+	<p align="center">
+		<a href="https://github.com/number571/awesome-anonymity/blob/master/LICENSE">
+        	<img src="https://img.shields.io/github/license/number571/awesome-anonymity.svg" alt="License" />
+		</a>
+        <a href="https://github.com/number571/awesome-anonymity/pulse">
+        	<img src="https://img.shields.io/github/commit-activity/m/number571/awesome-anonymity" alt="Activity" />
+		</a>
+        <a href="https://github.com/number571/awesome-anonymity/commits/master">
+        	<img src="https://img.shields.io/github/last-commit/number571/awesome-anonymity.svg" alt="Commits" />
+		</a>
+	</p>
+	About repository
+</h2>
 
 Each anonymous network can be attributed to a specific problem (or to a hybrid of certain problems). Currently, there are five anonymization problems: Onion, Proxy, DC, QB, EI. If the network does not belong to one of these problems, it means that either the network is not anonymous, or a new anonymization problem has been opened. In the latter case, it is necessary to prove that the new anonymization problem actually implements an algorithm for obfuscating/hiding routing.
 
