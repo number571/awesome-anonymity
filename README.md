@@ -155,7 +155,7 @@ where
 
 #### Networks
 * [Hidden Lake](https://github.com/number571/go-peer/tree/master/cmd/hidden_lake): network_arch=p2p, network_type=closed, source_code=open, subtype_problem=f2f
-* [M-A](https://github.com/number571/go-peer/tree/master/cmd/micro_anon): network_arch=p2p, network_type=closed, source_code=open, subtype_problem=f2f
+* [M-A](https://github.com/number571/micro-anon): network_arch=p2p, network_type=closed, source_code=open
 
 ### 5. EI (entropy increase problem)
 
