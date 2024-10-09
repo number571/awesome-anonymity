@@ -74,7 +74,7 @@ Anonymity is the concealment of the true connections between multiple senders an
 * [Crowds: Anonymity for Web Transactions](https://web.archive.org/web/20051212103028/http://avirubin.com/crowds.pdf)
 
 #### Networks
-* [Crowds](https://en.wikipedia.org/wiki/Crowds_(anonymity_network)): network_arch=p2p, network_model=decentralized, network_type=open, source_code=missing
+* [Crowds](https://en.wikipedia.org/wiki/Crowds_(anonymity_network)): network_arch=hybrid, network_model=centralized, network_type=open, source_code=missing
 
 ### 3. DC (dining cryptographers problem)
 
