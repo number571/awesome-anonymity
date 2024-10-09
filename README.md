@@ -51,6 +51,16 @@ Anonymity is the concealment of the true connections between multiple senders an
     <img src="images/onion.png" alt="onion.png"/>
 </p>
 
+### Pattern
+
+```
+E(K3, E(K2, E(K1, M))) -> E(K2, E(K1, M)) -> E(K1, M) -> M
+where
+	E - encryption
+	K - key
+	M - message
+```
+
 #### Research papers
 * [Untraceable Electronic Mail, Return Addresses, and Digital Pseudonyms](https://dl.acm.org/doi/10.1145/358549.358563)
 * [Securing the Tor Network](https://www.blackhat.com/presentations/bh-usa-07/Perry/Whitepaper/bh-usa-07-perry-WP.pdf)
@@ -69,6 +79,16 @@ Anonymity is the concealment of the true connections between multiple senders an
     <img src="images/proxy.png" alt="proxy.png"/>
 </p>
 
+### Pattern
+
+```
+E(K3, M) -> E(K2, M) -> E(K1, M) -> M
+where
+	E - encryption
+	K - key
+	M - message
+```
+
 #### Research papers
 * [Crowds: Anonymity for Web Transactions](https://web.archive.org/web/20051212103028/http://avirubin.com/crowds.pdf)
 
@@ -80,6 +100,17 @@ Anonymity is the concealment of the true connections between multiple senders an
 <p align="center">
     <img src="images/dc.png" alt="dc.png"/>
 </p>
+
+### Pattern
+
+```
+(A(B) xor A(C)) xor (B(A) xor B(C)) xor (C(A) xor C(B))    -> M = 0b
+(A(B) xor A(C)) xor (B(A) xor B(C)) xor not(C(A) xor C(B)) -> M = 1b
+where
+	A(B) = B(A) - total generated bit between A and B
+	B(C) = C(B) - total generated bit between B and C
+	C(A) = A(C) - total generated bit between C and A
+```
 
 #### Research papers
 * [The Dining Cryptographers Problem: Unconditional Sender and Recipient Untraceability](https://www.cs.cornell.edu/people/egs/herbivore/dcnets.html)
@@ -98,6 +129,20 @@ Anonymity is the concealment of the true connections between multiple senders an
     <img src="images/qb.png" alt="qb.png"/>
 </p>
 
+### Pattern
+
+```
+(E(K, M) OR E(R, V)) <- A(x)
+where
+	E - encryption
+	K - key
+	R - random key
+	M - message
+	V - void message
+	A - generation algorithm
+	x - independent event
+```
+
 #### Research papers
 * [Анонимная сеть «Hidden Lake»](https://github.com/number571/go-peer/blob/master/docs/hidden_lake_anonymous_network.pdf)
 
@@ -110,6 +155,16 @@ Anonymity is the concealment of the true connections between multiple senders an
 <p align="center">
     <img src="images/ei.png" alt="ei.png"/>
 </p>
+
+### Pattern
+
+```
+E(K1, M) OR E(K2, E(K1, M))
+where
+	E - encryption
+	K - key
+	M - message
+```
 
 #### Research papers
 * [Анонимная сеть с теоретически доказуемой моделью на базе увеличения энтропии](https://habr.com/ru/articles/743630/)
