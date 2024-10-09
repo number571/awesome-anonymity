@@ -134,13 +134,10 @@ where
 ```
 (E(K, M) OR E(R, V)) <- A(x)
 where
-	E - encryption
-	K - key
-	R - random key
-	M - message
-	V - void message
-	A - generation algorithm
-	x - independent event
+	E    - encryption
+	K, R - key, random key
+	M, V - message, void message
+	A(x) - generation algorithm with independent event
 ```
 
 #### Research papers
