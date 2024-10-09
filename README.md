@@ -27,6 +27,10 @@ Anonymity is the concealment of the true connections between multiple senders an
 
 ### 1. Onion
 
+<p align="center">
+    <img src="images/onion.png" alt="onion.png"/>
+</p>
+
 #### Research papers
 * [Untraceable Electronic Mail, Return Addresses, and Digital Pseudonyms](https://dl.acm.org/doi/10.1145/358549.358563)
 
@@ -38,6 +42,10 @@ Anonymity is the concealment of the true connections between multiple senders an
 
 ### 2. Proxy
 
+<p align="center">
+    <img src="images/proxy.png" alt="proxy.png"/>
+</p>
+
 #### Research papers
 * [Crowds: Anonymity for Web Transactions](https://web.archive.org/web/20051212103028/http://avirubin.com/crowds.pdf)
 
@@ -46,6 +54,10 @@ Anonymity is the concealment of the true connections between multiple senders an
 
 ### 3. DC
 > dining cryptographers problem
+
+<p align="center">
+    <img src="images/dc.png" alt="dc.png"/>
+</p>
 
 #### Research papers
 * [The Dining Cryptographers Problem: Unconditional Sender and Recipient Untraceability](https://www.cs.cornell.edu/people/egs/herbivore/dcnets.html)
@@ -61,6 +73,10 @@ Anonymity is the concealment of the true connections between multiple senders an
 ### 4. QB
 > queue based problem
 
+<p align="center">
+    <img src="images/qb.png" alt="qb.png"/>
+</p>
+
 #### Research papers
 * [Анонимная сеть «Hidden Lake»](https://github.com/number571/go-peer/blob/master/docs/hidden_lake_anonymous_network.pdf)
 
@@ -69,6 +85,10 @@ Anonymity is the concealment of the true connections between multiple senders an
 
 ### 5. EI
 > entropy increase problem
+
+<p align="center">
+    <img src="images/ei.png" alt="ei.png"/>
+</p>
 
 #### Research papers
 * [Анонимная сеть с теоретически доказуемой моделью на базе увеличения энтропии](https://habr.com/ru/articles/743630/)
