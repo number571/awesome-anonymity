@@ -11,6 +11,7 @@ Anonymity is the concealment of the true connections between multiple senders an
 
 * All centralized services: Telegram, Facebook, Github, ...
 * Client-secure only applications: Bitmessage, RetroShare, Freenet ...
+* Decentralized networks without an obfuscating/hiding routing algorithm: MUTE, ...
 
 ## Tags
 
@@ -40,7 +41,7 @@ Anonymity is the concealment of the true connections between multiple senders an
 * [Crowds: Anonymity for Web Transactions](https://web.archive.org/web/20051212103028/http://avirubin.com/crowds.pdf)
 
 #### Networks
-* Crowds: network_arch=p2p, network_model=decentralized, network_type=open, source_code=missing
+* [Crowds](https://en.wikipedia.org/wiki/Crowds_(anonymity_network)): network_arch=p2p, network_model=decentralized, network_type=open, source_code=missing
 
 ### 3. DC
 > dining cryptographers problem
