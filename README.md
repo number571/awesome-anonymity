@@ -37,13 +37,21 @@ Anonymity is the concealment of the true connections between multiple senders an
 * Highly specialized systems with the property of confidential: Monero, Dash, ...
 * Applications based on an anonymous network: HLM (messenger), HLF (filesharer), ...
 
-#### 1. Why is Monero not an anonymous network?
-
+<details>
+  <summary>Why is Monero not an anonymous network?</summary>
+  <br>
+  <p>
 If we assume that RingSignature is an anonymization problem, then it should ensure anonymity in the network communication of subscribers. Let's further assume that there are three subscribers: {A, B, C}, who know each other's public keys and are connected to each other. In this case, A signs the message m with the public keys {B, C} and his private key, thereby forming a ring signature s. Next, subscriber A sends {m, s} to participant B. No one except {A, C}, without knowledge of their private keys, would be able to send this message, which is related to the authentication indicator, but not anonymity, because if the ring signature s did not exist at all, then the situation on the part of anonymity would not have changed at all. If we used additional proxying or tunneling, it would become a completely different problem, i.e. Proxy or Onion. Thus, the use of ring signatures is more similar to the use of a common MAC value by three participants on the part of symmetric cryptography. Only in the first case, instead of symmetric cryptography, we use asymmetric cryptography, without risking compromising the only secret.
+  </p>
+</details>
 
-#### 2. Why is Dash not an anonymous network?
-
+<details>
+  <summary>Why is Dash not an anonymous network?</summary>
+  <br>
+  <p>
 Unlike Monero, cryptocurrency Dash does have an anonymization problem similar to Mix networks, where one node accepts X denominations of the same length from the sender, which are then mixed and sent to the final recipient. Nevertheless, this Mix problem is only a special case of the Onion/Mix problem, because it does not encrypt data and, as a result, allows mixing data exclusively in currency format.
+  </p>
+</details>
 
 ## Tags
 
