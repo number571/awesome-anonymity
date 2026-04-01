@@ -22,7 +22,7 @@
 	About repository
 </h2>
 
-> Habr: https://habr.com/ru/articles/912554/
+> https://habr.com/ru/articles/912554/
 
 Each anonymous network can be attributed to a specific problem (or to a hybrid of certain problems). Currently, there are five anonymization problems: Onion, Proxy, DC, QB, EI. If the network does not belong to one of these problems, it means that either the network is not anonymous, or a new anonymization problem has been opened. In the latter case, it is necessary to prove that the new anonymization problem actually implements an algorithm for obfuscating/hiding routing.
 
