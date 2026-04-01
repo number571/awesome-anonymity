@@ -58,7 +58,8 @@ Unlike Monero, cryptocurrency Dash does have an anonymization problem similar to
 1. network_arch = [p2p, hybrid]
 2. network_type = [open, closed]
 3. source_code = [open, closed, missing]
-4. subtype_problem = [mixnet, garlic, f2f]
+4. subtype_problem = [mixnet, garlic, f2f, noise-gen]
+5. scalability = [O(1), O(N)]
 
 ## Problems
 
@@ -83,10 +84,10 @@ $$
 * [Mixminion: Design of a Type III Anonymous Remailer Protocol](https://www.mixminion.net/minion-design.pdf)
 
 #### Networks
-* [Tor](https://www.torproject.org/ru/): network_arch=hybrid, network_type=open|closed, source_code=open
-* [I2P](https://geti2p.com/): network_type=p2p, network_type=closed, source_code=open, subtype_problem=garlic
-* [Mixminion](https://www.mixminion.net/): network_arch=hybrid, network_type=open, source_code=open, subtype_problem=mixnet
-* [Perfect Dark](http://www21.atwiki.jp/botubotubotubotu/): network_type=hybrid, network_type=closed, source_code=closed, subtype_problem=mixnet
+* [Tor](https://www.torproject.org/ru/): network_arch=hybrid, network_type=open&closed, source_code=open, scalability=O(1)
+* [I2P](https://geti2p.com/): network_type=p2p, network_type=closed, source_code=open, subtype_problem=garlic, scalability=O(1)
+* [Mixminion](https://www.mixminion.net/): network_arch=hybrid, network_type=open, source_code=open, subtype_problem=mixnet, scalability=O(1)
+* [Perfect Dark](http://www21.atwiki.jp/botubotubotubotu/): network_type=hybrid, network_type=closed, source_code=closed, subtype_problem=mixnet, scalability=O(1)
 
 ### 2. Proxy
 
@@ -106,7 +107,7 @@ $$
 * [Crowds: Anonymity for Web Transactions](https://web.archive.org/web/20051212103028/http://avirubin.com/crowds.pdf)
 
 #### Networks
-* [Crowds](https://en.wikipedia.org/wiki/Crowds_(anonymity_network)): network_arch=hybrid, network_type=open, source_code=missing
+* [Crowds](https://en.wikipedia.org/wiki/Crowds_(anonymity_network)): network_arch=hybrid, network_type=open, source_code=missing, scalability=O(1)
 
 ### 3. DC (dining cryptographers problem)
 
@@ -129,9 +130,9 @@ $$
 * [PriFi: Low-Latency Anonymity for Organizational Networks](https://petsymposium.org/2020/files/papers/issue4/popets-2020-0059.pdf)
 
 #### Networks
-* [Herbivore](https://www.cs.cornell.edu/people/egs/herbivore/faq.html): network_arch=p2p, network_type=open, source_code=missing
-* [Dissent](https://github.com/dedis/Dissent): network_arch=hybrid, network_type=open, source_code=open
-* [PriFi](https://github.com/dedis/prifi): network_arch=hybrid, network_type=open, source_code=open
+* [Herbivore](https://www.cs.cornell.edu/people/egs/herbivore/faq.html): network_arch=p2p, network_type=open, source_code=missing, scalability=O(1)-O(N)
+* [Dissent](https://github.com/dedis/Dissent): network_arch=hybrid, network_type=open, source_code=open, scalability=O(N)
+* [PriFi](https://github.com/dedis/prifi): network_arch=hybrid, network_type=open, source_code=open, scalability=O(N)
 
 ### 4. QB (queue based problem)
 
@@ -153,8 +154,8 @@ $$
 * [Анонимная сеть «Hidden Lake»](https://github.com/number571/hidden-lake/blob/master/docs/hidden_lake_anonymous_network.pdf)
 
 #### Networks
-* [Hidden Lake](https://github.com/number571/hidden-lake): network_arch=p2p, network_type=closed, source_code=open, subtype_problem=f2f
-* [M-A](https://github.com/number571/micro-anon): network_arch=p2p, network_type=closed, source_code=open
+* [Hidden Lake](https://github.com/number571/hidden-lake): network_arch=p2p, network_type=closed, source_code=open, subtype_problem=f2f, scalability=O(N)
+* [M-A](https://github.com/number571/micro-anon): network_arch=p2p, network_type=closed, source_code=open, scalability=O(N)
 
 ### 5. EI (entropy increase problem)
 
@@ -188,7 +189,7 @@ Anonymous networks can be built on the basis of several anonymization problems. 
 * [Vuvuzela: Scalable Private Messaging Resistant to Traffic Analysis](https://pdos.csail.mit.edu/papers/vuvuzela:sosp15.pdf)
 
 #### Networks
-* [Vuvuzela](https://github.com/vuvuzela/vuvuzela): network_arch=hybrid, network_type=closed, source_code=open, subtype_problem=mixnet
+* [Vuvuzela](https://github.com/vuvuzela/vuvuzela): network_arch=hybrid, network_type=closed, source_code=open, subtype_problem=mixnet&noise-gen, scalability=O(1)-O(N)
 
 ## License
 
