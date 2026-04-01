@@ -141,7 +141,7 @@ $$
 
 ```math
 QB_{\{K\}}(m)=Q(t)\leftarrow
-\begin{cases}E(k,m)\leftarrow Input,\text{ }if\text{ }Q\neq\varnothing\\E(r, v)\leftarrow Random\text{ }
+\begin{cases}E(k,m)\leftarrow Input\\E(r, v)\leftarrow Random,\text{ }if\text{ }Q=\varnothing\text{ }
 \end{cases},
 ```
 
@@ -164,7 +164,7 @@ $$
 
 ```math
 EI_{\{K\}}(m)=
-\begin{cases}E(k_1, m),\text{ }if\text{ }R\text{ }mod\text{ }2=0\\ E(k_2,E(k_1, m))
+\begin{cases}E(k_1, m),\text{ }if\text{ }R\text{ }mod\text{ }2=0\\ E(k_2,E(k_1, m)),\text{ }else
 \end{cases}, 
 ```
 
