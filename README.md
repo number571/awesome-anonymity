@@ -189,9 +189,14 @@ $$
 
 ## Hybrids
 
-Anonymous networks can be built on the basis of several anonymization problems. These networks will be referred to as hybrid networks based on the method of traffic concealment. Anonymous networks described in this way cannot be correctly attributed to only one problem of anonymization.
+Anonymous networks can be built on the basis of several anonymization problems. These networks will be referred to as hybrid networks based on the method of traffic concealment. Some anonymous networks described in this way cannot be correctly attributed to only one problem of anonymization.
 
-### 1. Onion + QB
+### 1. Proxy + Onion
+
+#### Documentations
+* RetroShare: [+Tor](https://retrosharedocs.readthedocs.io/en/latest/tutorial/tor-hidden-rs-node/), [+I2P](https://retrosharedocs.readthedocs.io/en/latest/tutorial/i2p-hidden-rs-node/)
+
+### 2. Onion + QB
 
 #### Research papers
 * [Vuvuzela: Scalable Private Messaging Resistant to Traffic Analysis](https://pdos.csail.mit.edu/papers/vuvuzela:sosp15.pdf)
