@@ -59,7 +59,6 @@ Unlike Monero, cryptocurrency Dash does have an anonymization problem similar to
 2. network_type = [open, closed]
 3. source_code = [open, closed, missing]
 4. subtype_problem = [mixnet, garlic, f2f]
-5. todo_tag (need add/set tags)
 
 ## Problems
 
@@ -69,15 +68,13 @@ Unlike Monero, cryptocurrency Dash does have an anonymization problem similar to
     <img src="images/onion.png" alt="onion.png"/>
 </p>
 
-#### Pattern
+$$
+Onion_{\{K\}}(m)=E(k_n, E(k_{n-1}, E(\dotsc, E(k_1, m)))) \rightarrow \\ E(k_{n-1}, E(\dotsc, E(k_1, m))) \rightarrow \dotsc\\ E(k_1, m) \rightarrow m,
+$$
 
-```
-E(K3, E(K2, E(K1, M))) -> E(K2, E(K1, M)) -> E(K1, M) -> M
-where
-	E          - encryption
-	M          - message
-	K1, K2, K3 - keys
-```
+$$
+where \\ E\text{ - encryption}, \\ m\text{ - message}, \\ \{k_i\} \in K \text{ - keys}
+$$
 
 #### Research papers
 * [Untraceable Electronic Mail, Return Addresses, and Digital Pseudonyms](https://dl.acm.org/doi/10.1145/358549.358563)
@@ -97,15 +94,13 @@ where
     <img src="images/proxy.png" alt="proxy.png"/>
 </p>
 
-#### Pattern
+$$
+Proxy_{\{K\}}(m)= E(k_n, m) \rightarrow E(k_{n-1}, m) \rightarrow\dotsc\rightarrow E(k_1, m) \rightarrow m,
+$$
 
-```
-E(K3, M) -> E(K2, M) -> E(K1, M) -> M
-where
-	E          - encryption
-	M          - message
-	K1, K2, K3 - keys
-```
+$$
+where \\ E\text{ - encryption}, \\ m\text{ - message}, \\ \{k_i\} \in K \text{ - keys}
+$$
 
 #### Research papers
 * [Crowds: Anonymity for Web Transactions](https://web.archive.org/web/20051212103028/http://avirubin.com/crowds.pdf)
@@ -119,17 +114,13 @@ where
     <img src="images/dc.png" alt="dc.png"/>
 </p>
 
-#### Pattern
+$$
+DC_{\{G\}}(m)=\bigoplus_{i=1}^{n} (m_i\text{ }xor\text{ }\bigoplus_{j=1}^{n} G(i)_j),
+$$
 
-```
-(A(B) xor A(C)) xor (B(A) xor B(C)) xor (C(A) xor C(B))    -> M = 0
-(A(B) xor A(C)) xor (B(A) xor B(C)) xor not(C(A) xor C(B)) -> M = 1
-where
-	M           - message
-	A(B) = B(A) - total generated bit between A and B
-	B(C) = C(B) - total generated bit between B and C
-	C(A) = A(C) - total generated bit between C and A
-```
+$$
+where \\ i \neq j, \\ n\text{ - count of nodes}, \\ m\text{ - message}, \\ G(i)_j \text{ - generated bit between } i,j \text{ nodes}
+$$
 
 #### Research papers
 * [The Dining Cryptographers Problem: Unconditional Sender and Recipient Untraceability](https://www.cs.cornell.edu/people/egs/herbivore/dcnets.html)
@@ -148,16 +139,15 @@ where
     <img src="images/qb.png" alt="qb.png"/>
 </p>
 
-#### Pattern
+```math
+QB_{\{K\}}(m)=Q(t)\leftarrow
+\begin{cases}E(k,m)\leftarrow Input,\text{ }if\text{ }Q\neq\varnothing\\E(r, v)\leftarrow Random\text{ }
+\end{cases},
+```
 
-```
-(E(K, M) OR E(R, V)) <- A(x)
-where
-	E    - encryption
-	K, R - key, random key
-	M, V - message, void message
-	A(x) - generation algorithm with independent event
-```
+$$
+where \\ Q \text{ - queue of ciphertexts},\\ t \text{ - interval of generation},\\ E \text{ - encryption},\\ k, r \in K \text{ - keys},\\ m \text{ - message},\\ v \text{ - void message (noise)}
+$$
 
 #### Research papers
 * [Анонимная сеть «Hidden Lake»](https://github.com/number571/hidden-lake/blob/master/docs/hidden_lake_anonymous_network.pdf)
@@ -172,21 +162,33 @@ where
     <img src="images/ei.png" alt="ei.png"/>
 </p>
 
-#### Pattern
+```math
+EI_{\{K\}}(m)=
+\begin{cases}E(k_1, m),\text{ }if\text{ }R\text{ }mod\text{ }2=0\\ E(k_2,E(k_1, m))
+\end{cases}, 
+```
 
-```
-E(K1, M) OR E(K2, E(K1, M))
-where
-	E      - encryption
-	M      - message
-	K1, K2 - keys
-```
+$$
+where \\ E\text{ - encryption}, \\ m\text{ - message}, \\ \{k_i\} \in K \text{ - keys}
+$$
 
 #### Research papers
 * [Анонимная сеть с теоретически доказуемой моделью на базе увеличения энтропии](https://habr.com/ru/articles/743630/)
 
 #### Networks
 * _
+
+## Hybrids
+
+Anonymous networks can be built on the basis of several anonymization problems. These networks will be referred to as hybrid networks based on the method of traffic concealment. Anonymous networks described in this way cannot be correctly attributed to only one problem of anonymization.
+
+### 1. Onion + QB
+
+#### Research papers
+* [Vuvuzela: Scalable Private Messaging Resistant to Traffic Analysis](https://pdos.csail.mit.edu/papers/vuvuzela:sosp15.pdf)
+
+#### Networks
+* [Vuvuzela](https://github.com/vuvuzela/vuvuzela): network_arch=hybrid, network_type=closed, source_code=open, subtype_problem=mixnet
 
 ## License
 
