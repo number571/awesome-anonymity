@@ -61,7 +61,8 @@ Unlike Monero, cryptocurrency Dash does have an anonymization problem similar to
 3. network_routing = [classic, wandering, broadcast]
 4. source_code = [open, closed, missing]
 5. scalability = [O(1), O(N)]
-6. subtype_problem = [mixnet, garlic, f2f, noise-gen]
+6. project_status = [maintained, archived]
+7. subtype_problem = [mixnet, garlic, f2f, noise-gen]
 
 ## Problems
 
@@ -85,11 +86,11 @@ $$
 * [A Distributed Decentralised Information Storage and Retrieval System](https://www.hyphanet.org/assets/papers/ddisrs.pdf)
 
 #### Networks
-* [Crowds](https://en.wikipedia.org/wiki/Crowds_(anonymity_network)): network_arch=hybrid, network_type=open, network_routing=wandering, source_code=missing, scalability=O(1)
-* [GNUnet](https://www.gnunet.org/en/): network_arch=p2p, network_type=open, network_routing=classic, source_code=open, scalability=O(1)
-* [Hyphanet (Freenet)](https://www.hyphanet.org/index.html): network_arch=p2p, network_type=closed, network_routing=wandering, source_code=open, scalability=O(1), subtype_problem=f2f
-* [RetroShare](https://retroshare.cc/): network_arch=p2p, network_type=closed, network_routing=classic, source_code=open, scalability=O(1), subtype_problem=f2f
-* [MUTE](https://mute-net.sourceforge.net/): network_arch=p2p, network_type=closed, network_routing=wandering, source_code=open, scalability=O(1)
+* [Crowds](https://en.wikipedia.org/wiki/Crowds_(anonymity_network)): network_arch=hybrid, network_type=open, network_routing=wandering, source_code=missing, scalability=O(1), project_status=archived
+* [GNUnet](https://www.gnunet.org/en/): network_arch=p2p, network_type=open, network_routing=classic, source_code=open, scalability=O(1), project_status=maintained
+* [Hyphanet (Freenet)](https://www.hyphanet.org/index.html): network_arch=p2p, network_type=closed, network_routing=wandering, source_code=open, scalability=O(1), project_status=maintained, subtype_problem=f2f
+* [RetroShare](https://retroshare.cc/): network_arch=p2p, network_type=closed, network_routing=classic, source_code=open, scalability=O(1), project_status=maintained, subtype_problem=f2f
+* [MUTE](https://mute-net.sourceforge.net/): network_arch=p2p, network_type=closed, network_routing=wandering, source_code=open, scalability=O(1), project_status=archived
 
 ### 2. Onion
 
@@ -112,10 +113,10 @@ $$
 * [Mixminion: Design of a Type III Anonymous Remailer Protocol](https://www.mixminion.net/minion-design.pdf)
 
 #### Networks
-* [Tor](https://www.torproject.org/en/): network_arch=hybrid, network_type=open&closed, network_routing=classic, source_code=open, scalability=O(1)
-* [I2P](https://geti2p.com/): network_arch=p2p, network_type=closed, network_routing=classic, source_code=open, scalability=O(1), subtype_problem=garlic
-* [Mixminion](https://www.mixminion.net/): network_arch=hybrid, network_type=open, network_routing=classic, source_code=open, scalability=O(1), subtype_problem=mixnet
-* [Perfect Dark](http://www21.atwiki.jp/botubotubotubotu/): network_arch=hybrid, network_type=closed, network_routing=classic, source_code=closed, scalability=O(1), subtype_problem=mixnet
+* [Tor](https://www.torproject.org/en/): network_arch=hybrid, network_type=open&closed, network_routing=classic, source_code=open, scalability=O(1), project_status=maintained
+* [I2P](https://geti2p.com/): network_arch=p2p, network_type=closed, network_routing=classic, source_code=open, scalability=O(1), project_status=maintained, subtype_problem=garlic
+* [Mixminion](https://www.mixminion.net/): network_arch=hybrid, network_type=open, network_routing=classic, source_code=open, scalability=O(1), project_status=archived, subtype_problem=mixnet
+* [Perfect Dark](http://www21.atwiki.jp/botubotubotubotu/): network_arch=hybrid, network_type=closed, network_routing=classic, source_code=closed, scalability=O(1), project_status=maintained, subtype_problem=mixnet
 
 ### 3. DC (dining cryptographers problem)
 
@@ -138,9 +139,9 @@ $$
 * [PriFi: Low-Latency Anonymity for Organizational Networks](https://petsymposium.org/2020/files/papers/issue4/popets-2020-0059.pdf)
 
 #### Networks
-* [Herbivore](https://www.cs.cornell.edu/people/egs/herbivore/faq.html): network_arch=p2p, network_type=open, network_routing=broadcast, source_code=missing, scalability=O(1)-O(N)
-* [Dissent](https://github.com/dedis/Dissent): network_arch=hybrid, network_type=open, network_routing=broadcast, source_code=open, scalability=O(N)
-* [PriFi](https://github.com/dedis/prifi): network_arch=hybrid, network_type=open, network_routing=broadcast, source_code=open, scalability=O(N)
+* [Herbivore](https://www.cs.cornell.edu/people/egs/herbivore/faq.html): network_arch=p2p, network_type=open, network_routing=broadcast, source_code=missing, scalability=O(1)-O(N), project_status=archived
+* [Dissent](https://github.com/dedis/Dissent): network_arch=hybrid, network_type=open, network_routing=broadcast, source_code=open, scalability=O(N), project_status=archived
+* [PriFi](https://github.com/dedis/prifi): network_arch=hybrid, network_type=open, network_routing=broadcast, source_code=open, scalability=O(N), project_status=archived
 
 ### 4. QB (queue based problem)
 
@@ -162,8 +163,8 @@ $$
 * [Анонимная сеть «Hidden Lake»](https://github.com/number571/hidden-lake/blob/master/docs/hidden_lake_anonymous_network.pdf)
 
 #### Networks
-* [Hidden Lake](https://github.com/number571/hidden-lake): network_arch=p2p, network_type=closed, network_routing=broadcast, source_code=open, scalability=O(N), subtype_problem=f2f
-* [M-A](https://github.com/number571/micro-anon): network_arch=p2p, network_type=closed, network_routing=classic, source_code=open, scalability=O(1)-O(N)
+* [Hidden Lake](https://github.com/number571/hidden-lake): network_arch=p2p, network_type=closed, network_routing=broadcast, source_code=open, scalability=O(N), project_status=maintained, subtype_problem=f2f
+* [M-A](https://github.com/number571/micro-anon): network_arch=p2p, network_type=closed, network_routing=classic, source_code=open, scalability=O(1)-O(N), project_status=archived
 
 ### 5. EI (entropy increase problem)
 
@@ -202,7 +203,7 @@ Anonymous networks can be built on the basis of several anonymization problems. 
 * [Vuvuzela: Scalable Private Messaging Resistant to Traffic Analysis](https://pdos.csail.mit.edu/papers/vuvuzela:sosp15.pdf)
 
 #### Networks
-* [Vuvuzela](https://github.com/vuvuzela/vuvuzela): network_arch=hybrid, network_type=closed, network_routing=classic, source_code=open, scalability=O(1)-O(N), subtype_problem=mixnet&noise-gen
+* [Vuvuzela](https://github.com/vuvuzela/vuvuzela): network_arch=hybrid, network_type=closed, network_routing=classic, source_code=open, scalability=O(1)-O(N), project_status=archived, subtype_problem=mixnet&noise-gen
 
 ## License
 
